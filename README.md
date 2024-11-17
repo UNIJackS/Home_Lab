@@ -1,10 +1,10 @@
 # Linux Docker MC server Guide
 
 ## Disclaimer 
-This is largely an updated version of [github.com/jakobii](https://github.com/jakobii) [DockerMinecraftServerSetup.md](https://gist.github.com/jakobii/84fd24210a991491d59d9eb4d549f5fa) repositry. I used jakobii's repo as a guide to creat my minecraft docker server however i ran into issues with java versions so i thought i would document my process of creating a docker image for minecraft version 1.21.3 with java version 21.
+This is largely an updated version of [github.com/jakobii](https://github.com/jakobii) [DockerMinecraftServerSetup.md](https://gist.github.com/jakobii/84fd24210a991491d59d9eb4d549f5fa) repository. I used Jakobii's repo as a guide to create my Minecraft docker server however I ran into issues with Java versions. So I documented the process I followed for creating a docker image for Minecraft version 1.21.3 with java version 21.
 
 ## Docker Install
-- This section changes so reffer back to the docker install documentation if it fails.
+- This section changes so refer back to the docker install documentation if it fails.
 - Source: [https://docs.docker.com/engine/install/ubuntu/](https://docs.docker.com/engine/install/ubuntu/)
 
 - Add Docker's official GPG key
@@ -44,15 +44,15 @@ sudo docker run hello-world
 ## Java Install
 - Source: [https://minecraft.wiki/w/Tutorials/Setting_up_a_server](https://minecraft.wiki/w/Tutorials/Setting_up_a_server)
 
-- To remove all current java installs for a fresh new install
+- To remove all current Java installs for a fresh new install
 ```
 sudo apt-get purge java*
 ```
-- To install java 21 (for newer versions of MC)
+- To install Java 21 (for newer versions of MC)
 ```
 sudo apt install openjdk-21-jdk-headless
 ```
-- To install java 8 (for older versions of MC)
+- To install Java 8 (for older versions of MC)
 ```
 sudo apt install openjdk-8-jdk-headless
 ```
@@ -62,9 +62,9 @@ sudo apt install openjdk-8-jdk-headless
 ```
 wget https://piston-data.mojang.com/v1/objects/45810d238246d90e811d896f87b14695b7fb6839/server.jar
 ```
-- To download a diffrent or newer server jar.
+- To download a different or newer server jar.
   - Go to [https://www.minecraft.net/en-us/download/server](https://www.minecraft.net/en-us/download/server)
-  - Right click on the download link. For the above version the link text was "minecraft_server.1.21.3.jar"
+  - Right-click on the download link. For the above version, the link text was "minecraft_server.1.21.3.jar"
   - click "copy link address"
   - Your command will be
 ```
@@ -75,7 +75,7 @@ wget <Link address you copyed>
 ## Minecraft Setup
 - Source [https://gist.github.com/jakobii/84fd24210a991491d59d9eb4d549f5fa](https://gist.github.com/jakobii/84fd24210a991491d59d9eb4d549f5fa)
 - Place the downloaded jar into an empty directory of your choice
-- To run the jar file dowloaded from the wget i provided
+- To run the jar file downloaded from the wget I provided
 ```
 java -Xmx1024M -Xms1024M -jar server.jar nogui
 ```
@@ -119,8 +119,8 @@ EXPOSE 25565:25565
 CMD java -Xmx1024M -Xms1024M -jar <Name Of File Dowloaded>.jar nogui
 ```
 - The 1024 in the -Xmx1024M field refers to the maximum amount of RAM the server can use.
-- The 1024 in the -Xms1024M field refers to the inital amount of RAM allocated the server.
-- 1024 is eqal to 1 gigabytes of ram and it must be increased in incraments of 1024. Eg 8192 for 8 gigabytes (1024 * 8). 
+- The 1024 in the -Xms1024M field refers to the initial amount of RAM allocated the server.
+- 1024 is equal to 1 gigabyte of RAM and it must be increased in increments of 1024. E.g. 8192 for 8 gigabytes (1024 * 8). 
 - Futher reading on the from docker command can be found at [https://docs.docker.com/reference/dockerfile/#from](https://docs.docker.com/reference/dockerfile/#from)
 
 - To build your docker image
@@ -131,11 +131,11 @@ sudo docker build . --tag minecraft
 ```
 sudo docker volume create minecraftvol
 ```
-- Run the docker image with java terminal
+- Run the docker image with the Java terminal
 ```
 sudo docker run -p 25565:25565 --mount source=mincraftvol,target=/app minecraft
 ```
-- Run the docker image without java terminal
+- Run the docker image without the java terminal
 ```
 sudo docker run -d -p 25565:25565 --restart unless-stopped --mount source=mincraftvol,target=/app minecraft
 ```
