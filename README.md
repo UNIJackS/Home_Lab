@@ -1,4 +1,4 @@
-# Linux Docker MC server Guide
+# Linux Docker Minecraft server Guide
 
 ## Disclaimer 
 This is largely an updated version of [github.com/jakobii](https://github.com/jakobii) [DockerMinecraftServerSetup.md](https://gist.github.com/jakobii/84fd24210a991491d59d9eb4d549f5fa) Github Gist. I strongly recommend you refer back to this for further info on Docker as I have not included all the comments from the original Gist. I used Jakobii's Gist as a guide to create my Minecraft docker server. However, I ran into issues with the Java version as Java 21 is required for Minecraft 1.21.3. So this repo should provide a guide for newer versions of MC.
