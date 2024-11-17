@@ -116,7 +116,9 @@ ADD . /app/
 EXPOSE 25565:25565
 CMD java -Xmx1024M -Xms1024M -jar <Name Of File Dowloaded>.jar nogui
 ```
-
+- The 1024 in the -Xmx1024M field refers to the maximum amount of RAM the server can use.
+- The 1024 in the -Xms1024M field refers to the inital amount of RAM allocated the server.
+- 1024 is eqal to 1 gigabytes of ram and it must be increased in incraments of 1024. Eg 8192 for 8 gigabytes (1024 * 8). 
 - Futher reading on the from docker command can be found at [https://docs.docker.com/reference/dockerfile/#from](https://docs.docker.com/reference/dockerfile/#from)
 
 - To build your docker image
