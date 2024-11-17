@@ -1,4 +1,4 @@
-# gameServer
+# Linux Docker MC server
 
 
 ## Docker Install
