@@ -70,7 +70,7 @@ wget <Link address you copyed>
 
 
 ## Minecraft Setup
-- Source `[https://gist.github.com/jakobii/84fd24210a991491d59d9eb4d549f5fa](https://gist.github.com/jakobii/84fd24210a991491d59d9eb4d549f5fa)`
+- Source [https://gist.github.com/jakobii/84fd24210a991491d59d9eb4d549f5fa](https://gist.github.com/jakobii/84fd24210a991491d59d9eb4d549f5fa)
 - Place the downloaded jar into an empty directory of your choice
 - To run the jar file dowloaded from the wget i provided
 ```
@@ -91,7 +91,7 @@ op <UserName>
 ```
 
 ## Docker Setup
-- Source `[https://gist.github.com/jakobii/84fd24210a991491d59d9eb4d549f5fa](https://gist.github.com/jakobii/84fd24210a991491d59d9eb4d549f5fa)`
+- Source [https://gist.github.com/jakobii/84fd24210a991491d59d9eb4d549f5fa](https://gist.github.com/jakobii/84fd24210a991491d59d9eb4d549f5fa)
 
 - To create a Docker file
 ```
