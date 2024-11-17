@@ -2,6 +2,7 @@
 
 
 ## Docker Install
+- This section changes so reffer back to the docker install documentation if it fails.
 - Source: [https://docs.docker.com/engine/install/ubuntu/](https://docs.docker.com/engine/install/ubuntu/)
 
 - Add Docker's official GPG key
