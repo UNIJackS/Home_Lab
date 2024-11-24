@@ -43,4 +43,5 @@ cd <Directory Name>
 ```
 https://etcher.balena.io/#download-etcher
 ```
+- Select the ISO file and USB to be used and flash it
 
