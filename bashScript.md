@@ -4,19 +4,19 @@
 
 
 ## Setup
-- Put this at the top of the script to locate your bash install
+- **Put this at the top of the script to locate your bash install**
 ```
 #!/bin/bash
 ```
 
-- Marks a file as executable for your user
+- **Marks a file as executable for your user**
 ```
 chmod u+x <File Name>.sh
 ```
 
 
 ## Variables
-- Creating and setting variables
+- **Creating and setting variables**
 ```
 <Variable Name>=<Variable Value>
 ```
@@ -24,8 +24,10 @@ chmod u+x <File Name>.sh
 ```
 name=desktop
 ```
+<br />
 
-- Using variables
+
+- **Using variables**
 ```
 $<Variable Name>
 ```
