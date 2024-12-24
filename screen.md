@@ -3,7 +3,6 @@
 
 
 ## Screen Install
-- This section changes so refer back to the docker install documentation if it fails.
 - Source: [https://linuxize.com/post/how-to-use-linux-screen/](https://linuxize.com/post/how-to-use-linux-screen/)
 
 ```
