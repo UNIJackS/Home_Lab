@@ -1,4 +1,4 @@
-# Linux Mint install guide
+# Linux Mint install Reference
 This guide shows the steps for installing Linux Mint on my laptop. This is primarily for my own future reference and I reccomend using the [official guide](https://linuxmint-installation-guide.readthedocs.io/en/latest/).
 
 ## Download the ISO image 
