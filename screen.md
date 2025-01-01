@@ -55,5 +55,5 @@ screen -r <Screen name or ID>
 
 - Close screen
 ```
-screen -XS <Screen name or ID>
+screen -XS <Screen name or ID> quit
 ```
