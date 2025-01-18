@@ -19,6 +19,11 @@ sudo ethtool <network device name>
 sudo ethtool -s <network device name> wol g
 ```
 
+- **Make changes permanant**
+```
+https://thedarkercorner.com/setting-up-wake-on-lan-on-ubuntu-server-22-04-lts/
+```
+
 - **Troubleshooting**
   - Make sure WOL is enabled in PCIE settings in BIOS
   - Make sure sleep states are disabled in BIOS
